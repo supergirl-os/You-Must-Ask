@@ -1,0 +1,165 @@
+<view wx:if="{{!pageswitch}}" class="c-minheight wx-view_FhhAKO" data-c_e_id="wx_view_86db7491">
+  <swiper autoplay="True" circular="True" class="wx-swiper_8qGeIP" data-c_e_id="wx_swiper_1a6df6a8" indicator-dots="True" lower-threshold="50">
+    <swiper-item class="c-full wx-swiper-item_JUTo8U" data-c_e_id="wx_swiper_item_56d06a33">
+      <view class="wx-view_9AHgoU" data-c_e_id="wx_view_37a0372e">
+        <text class="c-block wx-text_lun8Np" data-c_e_id="wx_texta8795c71">人工智能AI</text>
+        <text class="c-block wx-text_56NxjL" data-c_e_id="wx_text918aff5c">在线答疑     
+                    基础知识一应俱全</text>
+        <view class="wx-view_eJpe4z" data-c_e_id="wx_view5f80f6e6">
+          <image class="wx-image_rxdS0O" data-c_e_id="wx_imageafdbd437" mode="aspectFit" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584247015193&di=8bac68146aa2ae42335ab03766029d67&imgtype=0&src=http%3A%2F%2Fwww.d1net.com%2Fuploadfile%2F2019%2F0125%2F20190125103834487.jpg"
+          />
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="c-full wx-swiper-item_PyBVYt" data-c_e_id="wx_swiper_item_e21b7d4e">
+      <view class="wx-view_9AHgoU" data-c_e_id="wx_view90265df0">
+        <text class="c-block wx-text_lun8Np" data-c_e_id="wx_text921073fc">大学题目宝库</text>
+        <text class="c-block wx-text_56NxjL" data-c_e_id="wx_textdf64bbed">在线悬赏问题，发布文章获得积分</text>
+        <view class="c-minheight wx-view_eJpe4z" data-c_e_id="wx_view024a5ef6">
+          <image class="wx-image_rxdS0O" data-c_e_id="wx_image818be8ea" mode="aspectFit" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584252429135&di=dba0280972c9fbd8d0650f809985de79&imgtype=0&src=http%3A%2F%2Fimg.51miz.com%2FElement%2F00%2F96%2F76%2F00%2F3a60cf7c_E967600_f6f851aa.png%2521%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue%2Fformat%2Fpng"
+          />
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="c-full wx-swiper-item_TR9yQI" data-c_e_id="wx_swiper_item_1814a816">
+      <view class="wx-view_9AHgoU" data-c_e_id="wx_view369e101c">
+        <text class="c-block wx-text_lun8Np" data-c_e_id="wx_text43080aba">师生交流交友平台</text>
+        <text class="c-block wx-text_56NxjL" data-c_e_id="wx_text119e88d3">向学霸和大牛交流共赢</text>
+        <view class="c-minheight wx-view_eJpe4z" data-c_e_id="wx_view310897ec">
+          <image class="wx-image_rxdS0O" data-c_e_id="wx_image04b7b983" mode="aspectFit" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584252475379&di=32686c7a9402c96c339a404b296f55c9&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10113%2F48%2Fw1080h568%2F20200303%2Ffa14-iqfqmat8055221.jpg"
+            style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/4e3675d307eb837f998dd5cad22ebe83_origin.jpg); " />
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="c-minheight wx-view_JjAvLE" data-c_e_id="wx_view_7ac6c7cf">
+    <button bindgetuserinfo='handleGetUserInfo' bindtap='getUserInfo' open-type='getUserInfo' style='display:{{ isShow ? "block" : "none" }}'>
+      <text class="c-block wx-text_T7Ctll" data-c_e_id="wx_text_85b91d3b">微信登陆</text>
+    </button>
+  </view>
+</view>
+
+<view wx:elif="{{pageswitch==true}}">
+
+  <view class="container more">
+
+    <view class="user">
+
+      <view class="photo">
+        <image class="userinfo-photo" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+
+      <view class="in">
+        <view class="personal-info" bindtap="checkInfo">
+          <text class="per">修改信息 >></text>
+  
+        </view>
+      </view>
+      
+      <view >
+        <view >
+          <text class="userinfo-nickname">{{userInfo.nickname}}</text>
+          <image class="genderimg" src="{{userInfo.gender == 0? '../../resources/male.png': userInfo.gender == 1 ? '../../resources/female.png' : '../../resources/mysterious.png'}}"></image>
+          <text>\n</text>
+          <text class='infora' >{{userInfo.school}}  </text>
+              <text class= 'infor'>{{userInfo.identification}}</text>
+          <text>\n</text>
+           <text class= 'infor'>{{userInfo.major}}</text>
+           <text class= 'infor'>{{userInfo.subject}}</text>
+          <text>\n</text>
+          <text class= 'infore' >个人签名：{{userInfo.sign}}</text>
+          <text>\n</text>
+        </view>
+      </view>
+
+
+
+    </view>
+
+  </view>
+<view class="mymoney">
+<view class="money-img">
+<image class="money" src="../../resources/mymoney.png" style="width:40rpx; height:40rpx;"
+></image>
+</view>
+<view class="money-text">
+<text class="money-text">我 的 币 值:  {{userInfo.valuecoin}}</text>
+</view>
+<view class="help">如 何 获 取
+</view>
+</view>
+
+  <view class="my">
+
+    <button class="my-item flex-wrp" bindtap="jumpfollowlist">
+      <view class="myitem-icon flex-item">
+        <image src="../../resources/follow.png" style="width:40rpx; height:40rpx;"> </image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的关注</text>
+      </view>
+      <view class="aror">
+        <image src="../../resources/aror.png" style="width:40rpx; height:40rpx;float:right;"> </image>
+      </view>
+    </button>
+
+    <button class="my-item flex-wrp" bindtap="jumpcollection">
+      <view class="myitem-icon flex-item">
+        <image src="../../resources/collection.png" style="width:40rpx; height:40rpx;"> </image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收藏</text>
+      </view>
+      <view class="aror">
+        <image src="../../resources/aror.png" style="width:40rpx; height:40rpx;float:right;"> </image>
+      </view>
+    </button>
+
+    <button class="my-item flex-wrp" bindtap="jumpmypost">
+      <view class="myitem-icon flex-item">
+        <image src="../../resources/question.png" style="width:40rpx; height:40rpx;"> </image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我发布的</text>
+      </view>
+      <view class="aror">
+        <image src="../../resources/aror.png" style="width:40rpx; height:40rpx;float:right;"> </image>
+      </view>
+    </button>
+        <button class="my-item flex-wrp" bindtap="jumpmyanswer">
+      <view class="myitem-icon flex-item">
+        <image src="../../resources/edit.png" style="width:40rpx; height:40rpx;"> </image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我回答的</text>
+      </view>
+      <view class="aror">
+        <image src="../../resources/aror.png" style="width:40rpx; height:40rpx;float:right;"> </image>
+      </view>
+    </button>
+    <button class="my-item flex-wrp" bindtap="jumphistory">
+      <view class="myitem-icon flex-item">
+        <image src="../../resources/browse.png" style="width:40rpx; height:40rpx;"> </image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>最近浏览</text>
+      </view>
+      <view class="aror">
+        <image src="../../resources/aror.png" style="width:40rpx; height:40rpx;float:right;"> </image>
+      </view>
+    </button>
+    <button class="my-item flex-wrp" bindtap="jumpnotify">
+      <view class="myitem-icon flex-item">
+        <image src="../../resources/message.png" style="width:40rpx; height:40rpx;"> </image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的消息</text>
+      </view>
+      <view class="aror">
+        <image src="../../resources/aror.png" style="width:40rpx; height:40rpx;float:right;"> </image>
+      </view>
+    </button>
+
+
+  </view>
+</view>

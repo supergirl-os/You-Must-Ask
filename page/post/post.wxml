@@ -1,0 +1,186 @@
+<!-- <view class="bottomGrayboder toptab" data-c_e_id="wx_view_cb07a842">
+    <view bindtap="tap_d9c62767" class="toptabWrap" data-c_e_id="wx_view_c2045354">
+        <view class="active toptabItem" data-c_e_id="_other_text_221e07ff"> 
+            最新题目 
+        </view> 
+    </view>
+    </view> -->
+
+<swiper autoplay="True" circular="True" indicator-dots="True" indicator-color="white" indicator-active-color="#768cce">
+  <swiper-item>
+    <view class="luntext">
+      <text class="luntext">欢迎开启问答之旅</text>
+    </view>
+    <view class="lunone">
+      <image class="lunone" src="../../resources/lunone.png" style="width:750rpx; height:250rpx;align-items:center;"> </image>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="luntext">
+      <text class="luntext">欢迎开启问答之旅</text>
+    </view>
+    <view class="lunthr">
+      <image class="lunone" src="../../resources/luntwo.jpg" style="width:750rpx; height:250rpx;align-items:center;"> </image>
+    </view>
+  </swiper-item>
+
+
+  <swiper-item>
+    <view class="luntext">
+      <text class="luntext">欢迎开启问答之旅</text>
+    </view>
+    <view class="lunthr">
+      <image class="lunone" src="../../resources/lunthr.jpg" style="width:750rpx; height:250rpx;align-items:center;"> </image>
+    </view>
+  </swiper-item>
+</swiper>
+
+<!--<scroll-view scroll-y="True" wx:if="{{!pageswitch}}">
+
+<view   wx:for="{{datas}}" wx:key="id">
+<view>
+  <text class="text_description">{{index+1}}:{{item.content}}\n</text>
+  <text wx:for="{{item.answers}}" wx:key="key" wx:for-index="key"  wx:for-item="value" class="c-block likeinfo_count">
+  {{key}}： {{value}}</text>
+  <text class="listitem_creattime">价值：{{item.valuecoin}}金币\n</text>
+  <image wx:if="{{item.image_path!=null}}" class="quizimage" src="{{item.image_path}}"></image>
+  <text>\n</text>
+</view>
+ </view>
+ <view class='testbutton' bindtap='Compilepost'>发布题目</view>
+ </scroll-view>-->
+<view class="all" wx:if="{{!pageswitch}}">
+  <view class="cata">
+    <text class="cata-text">最 新 悬 赏</text>
+    <image class="cata-im" src="../../resources/daohang.png" style="width:100rpx; height:62rpx;"> </image>
+  </view>
+
+<scroll-view scroll-y="True">
+<view class="show_question">
+  <view class="question_item" wx:for="{{productData}}" wx:key="index"data-id="{{item._id}}" bindtap="comment">
+    <view class="fromquestion">
+     
+      <view class="question_content">
+        <view class="que_content">{{item.content}}</view>
+      </view>
+       <view class="question_image">
+        <image class="auto-image" src="{{item.small_image}}" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="fun">
+          <image class="icon" src="../../resources/clock.png"></image>
+          <!-- <text class="detail">{{productData.create_date.year+1900}}-{{productData.create_date.month+1}}-{{productData.create_date.date}}</text> -->
+           <text class="detail">{{item.Submitdate}}</text>
+          <image class="icon" src="../../resources/thumbup.png"></image>
+          <text class="detail">{{item.thumbup}}</text>
+          <image class="icon" src="../../resources/money.png"> </image>
+          <text class="detail">{{item.valuecoin}}</text>
+          <image class="icon" src="../../resources/comment.png"></image>
+          <text class="detail">{{item.comment}}</text>
+          <image class="icon" src="../../resources/collection.png"></image>
+        </view>
+   </view>
+
+</view>
+
+
+ <view class='testbutton' bindtap='Compilepost'>发布题目</view>
+</scroll-view>
+
+  <!-- <scroll-view scroll-y="True">
+    <view wx:for="{{datas}}" wx:key="id">
+      <view class="question" id="{{item.question_id}}" ontap="comment">
+        <view class="user">
+          <view>
+            <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+          </view>
+          <view class="info">
+            <text id="nickname">{{item.nickname}}\n</text>
+          </view>
+        </view>
+        <view class="content-all">
+          <view class="content">{{item.content}}</view>
+         
+         <view wx:if="{{question.image_path==null}}" class="picture">
+            <image src="../../resources/test.png" style="width:200rpx;height:150rpx;"></image> -->
+            <!--获取问题图片<image src="{{question.image_path}}"></image>-->
+
+          <!-- </view>
+        </view>
+        <view class="fun">
+          <image class="icon" src="../../resources/clock.png"></image>
+          <text class="detail">{{item.create_date.year+1900}}-{{item.create_date.month+1}}-{{item.create_date.date}}</text>
+          <image class="icon" src="../../resources/thumbup.png"></image>
+          <text class="detail">{{item.thumbup}}</text>
+          <image class="icon" src="../../resources/money.png"> </image>
+          <text class="detail">{{item.valuecoin}}</text>
+          <image class="icon" src="../../resources/comment.png"></image>
+          <text class="detail">{{item.comment}}</text>
+          <image class="icon" src="../../resources/collection.png"></image>
+        </view>
+
+      </view>
+      <view class="divLine"></view>
+    </view>
+    <view class='testbutton' bindtap='Compilepost'>发布题目</view>
+  </scroll-view> --> 
+</view>
+
+
+<view wx:elif="{{pageswitch==true}}">
+  <form bindsubmit="onSubmit" bindreset="">
+    <view class="all_submit">
+      <view class="container">
+
+        <view class="top">
+          <view class="top-text">
+            <text>发 布 题 目</text>
+          </view>
+          <view bindtap="Back" class='btn success'>
+            <image class="cata-im" src="../../resources/close.png" style="width:60rpx; height:60rpx;"> </image>
+          </view>
+        </view>
+
+        <view class='btn plusph' bindtap="chooseImage" size="mini" wx:if="{{images.length < 3}}">
+          <image class="addph" src="../../resources/addph.png" style="width:100rpx; height:100rpx;"> </image>
+        </view>
+
+        <view class="question-images">
+          <block wx:for="{{images}}" wx:key="*this">
+            <view class="q-image-wrap">
+              <!-- 图片缩略图  -->
+              <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+              <!-- 移除图片的按钮  -->
+              <text class='delete' data-idx="{{index}}" bindtap="removeImage">删除</text>
+            </view>
+          </block>
+        </view>
+
+
+        <view class='row'>
+          <textarea class="textarea" bindinput="contentinput" placeholder="{{placeholder}}" placeholder-class="placeholder" maxlength="{{maxlength}}" focus="{{focus}}" auto-height="{{auto-height}}" show-confirm-bar="{{show-confirm-bar}}"></textarea>
+        </view>
+
+
+        <view class='bottom'>
+          <view class="money">
+            <text class="money-text">悬 赏 金</text>
+            <image class="cata-im" src="../../resources/money.png" style="width:62rpx; height:62rpx;"> </image>
+          </view>
+          <!-- 减号 -->
+          <button class="stepper" bindtap="bindMinus">
+            <text class="stepper-text">-</text>
+          </button>
+          <text class='btn plus' bindtap="addcoin" size="mini">{{valuecoin}}</text>
+          <!-- 加号 -->
+          <button class="steppero" bindtap="bindPlus">
+            <text class="stepper-text">+</text>
+          </button>
+          <button formType="submit" class='btn-success'>保存并提交</button>
+          
+        </view>
+      </view>
+    </view>
+  </form>
+</view>

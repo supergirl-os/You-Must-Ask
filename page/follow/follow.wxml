@@ -1,0 +1,51 @@
+<!--page/follow/follow.wxml-->
+<view class="card">
+<view class="cardin">
+    <view class="title">
+       <image src="../../resources/title.PNG" style="width:100%; height:150rpx;float:center;"> </image>
+    </view>
+    <view class="one">
+        <text class="user-text">姓  名： {{follows.nickname}}\n</text>
+    </view>
+
+    <view class="one">
+        <text class="user-text">学  校： {{follows.school}}\n</text>
+    </view>
+
+   <view class="one">
+        <text class="user-text">性  别： {{follows.gender}}\n</text>
+    </view>
+
+    <view class="one">
+        <text class="user-text">学  科： {{follows.major_name}}\n</text>
+    </view>
+
+   <view class="one">
+        <text class="user-text">专  业： {{follows.own_major}}\n</text>
+    </view>
+
+   <view class="one">
+        <text class="user-text">身   份： {{follows.identification}}\n</text>
+    </view>
+
+   <view class="one">
+        <text class="user-text">个人签名： {{follows.sign}}\n</text>
+    </view>
+
+   <view class="one">
+        <text class="user-text">用户币值： {{follows.valuecoin}}\n</text>
+    </view>
+</view>
+</view>
+
+<view class="two">
+<button class="three" bindtap="follow">
+<text>关注</text>
+</button>
+<button class="three"  bindtap="cancelfollow">
+<text>取关</text>
+</button>
+</view>
+<view class="three-im">
+ <image src="../../resources/three.PNG" style="width:100%; height:400rpx;float:center;"> </image>
+ </view>

@@ -1,0 +1,199 @@
+<text class="_other_text_LxtT2c1">
+            学科分类助你找到更多资料哦~
+    </text>
+
+<scroll-view class="Wrapscroll-view" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+
+  <view class="classifyiconWrap">
+    <view class="classifyicongrid">
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" mode="aspectFit" src="../../resources/electric.png" />
+        <text class="wx-text_DGqVdA">电气</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/law.png" />
+        <text class="wx-text_DGqVdA">法学</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/water.png" />
+        <text class="wx-text_DGqVdA">水利</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/literary.png" />
+        <text class="wx-text_DGqVdA">文新</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/com.png" />
+        <text class="wx-text_DGqVdA">计算机</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/math.png" />
+        <text class="wx-text_DGqVdA">数学</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/20200315165057.png" />
+        <text class="wx-text_DGqVdA">医学</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/politics.png" />
+        <text class="wx-text_DGqVdA">政治</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/eco.png" />
+        <text class="wx-text_DGqVdA">经济</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/language.png" />
+        <text class="wx-text_DGqVdA">外国语</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/chemistry.png" />
+        <text class="wx-text_DGqVdA">化学</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/physics.png" />
+        <text class="wx-text_DGqVdA">物理</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/biology.png" />
+        <text class="wx-text_DGqVdA">生科</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/history.png" />
+        <text class="wx-text_DGqVdA">历史</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/plane.png" />
+        <text class="wx-text_DGqVdA">空天</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/machine.png" />
+        <text class="wx-text_DGqVdA">制造</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/building.png" />
+        <text class="wx-text_DGqVdA">建环</text>
+      </navigator>
+      <navigator class="wx-navigator_JBV5If" hover-class="navigator-hover">
+        <image class="wx-image_9GbZXI" src="../../resources/others.png" />
+        <text class="wx-text_DGqVdA">其他</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="divLine"></view>
+  <view class="wx-view_TQ4nqD">
+    <view class="_other_text_LxtT2c2">
+      推荐用户
+    </view>
+
+    <scroll-view class="wx-scroll-view_u9Dyk2" lower-threshold="50" scroll-x="True" style="overflow-x: auto; overflow-y: hidden; " upper-threshold="50">
+      <view class="wx-view_Fsk3xr" wx:for="{{goodfellows}}" wx:key="id">
+        <navigator class="wx-navigator_NdRePK" id="{{item.user_id}}" url="../followlist/followlist" hover-class="navigator-hover">
+          <view class="wx-view_rMrdRK">
+            <image class="useravatar" mode="aspectFill" src="{{item.avatarUrl}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(../../resources/20200315182106.jpg); " />
+          </view>
+          <text class="c-block wx-text_rEcdDL">{{item.nickname}}</text>
+        </navigator>
+
+      </view>
+    </scroll-view>
+
+    <view class="divLine"></view>
+  </view>
+
+
+
+  <view class="PanellistWrap" wx:if="{{!pageswitch}}">
+    <view class="style">
+      <text class="passtitle">
+            热门文章
+        </text>
+    </view>
+
+
+    <scroll-view scroll-y="True">
+      <view wx:for="{{datas}}" wx:key="id">
+        <view class="cardLine"></view>
+        <view class="question" id="{{item.article_id}}" ontap="articom">
+          <view class="user">
+            <view>
+              <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+            </view>
+            <view class="info">
+              <text id="nickname">{{item.nickname}}\n</text>
+            </view>
+          </view>
+          <view class="content-all">
+
+            <view class="content">{{item.title}}\n</view>
+            <view class="content-part">{{item.content}}</view>
+            <!-- <view wx:if="{{question.image_path==null}}" class="picture">
+         <image src="../../resources/test.png" style="width:200rpx;height:150rpx;"></image>
+
+       </view> -->
+          </view>
+          <view class="fun">
+            <image class="icon" src="../../resources/clock.png"></image>
+            <text class="detail">{{item.create_date.year+1900}}-{{item.create_date.month+1}}-{{item.create_date.date}}</text>
+            <image class="icon" src="../../resources/thumbup.png"></image>
+            <text class="detail">{{item.thumbup}}</text>
+            <image class="icon" src="../../resources/comment.png"></image>
+            <text class="detail">{{item.comment}}</text>
+          </view>
+
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='testbutton' bindtap='postarticle' wx:if="{{pageswitch==false}}">发布文章</view>
+</scroll-view>
+
+<view wx:if="{{pageswitch==true}}">
+  <form bindsubmit="onSubmit" bindreset="">
+    <view class="all_submit">
+      <view class="container">
+
+        <view class="top">
+          <view class="top-text">
+            <text>发 布 文 章</text>
+          </view>
+
+          <view bindtap="Back" class='btn success'>
+            <image class="cata-im" src="../../resources/close.png" style="width:60rpx; height:60rpx;"> </image>
+          </view>
+
+        </view>
+
+        <view class='title'>
+          <input name="title" placeholder-class="placeholder" placeholder="在此输入标题" bindinput="titleinput" />
+        </view>
+
+        <view class='btn plusph' bindtap="chooseImage" size="mini" wx:if="{{images.length < 3}}">
+          <image class="addph" src="../../resources/addph.png" style="width:100rpx; height:100rpx;"> </image>
+        </view>
+        <view class="question-images">
+          <block wx:for="{{images}}" wx:key="*this">
+            <view class="q-image-wrap">
+              <!-- 图片缩略图  -->
+              <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+              <!-- 移除图片的按钮  -->
+              <text class='delete' data-idx="{{index}}" bindtap="removeImage">删除</text>
+            </view>
+          </block>
+        </view>
+
+
+        <view class='row'>
+          <textarea class="textarea" bindinput="contentinput" placeholder="{{placeholder}}" placeholder-class="placeholder" maxlength="{{maxlength}}" focus="{{focus}}" auto-height="{{auto-height}}" show-confirm-bar="{{show-confirm-bar}}"></textarea>
+        </view>
+
+
+        <view class='bottom'>
+          <button formType="submit" class='btn-success'>保存并提交</button>
+          <button class='btn-success'>学科标签</button>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>

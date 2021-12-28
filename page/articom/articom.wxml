@@ -1,0 +1,91 @@
+<!--page/articom/articom.wxml-->
+<scroll-view scroll-y="True">
+  <view id="article">
+    <view class="user" id="{{dalao_id}}" bindtap="follow">
+      <view>
+        <image class="user-photo" src="{{article.avatarUrl}}" background-size="cover"></image>
+      </view>
+      <view class="info">
+        <text id="nickname">{{article.nickname}}\n</text>
+        <view class="time">
+          <text class="detail-time">{{article.create_date.year+1900}}-{{article.create_date.month+1}}-{{article.create_date.date}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="content">{{article.content}}</view>
+    <view wx:if="{{article.image_path!=null}}" class="picture">
+      <image src="{{article.image_path}}"></image>
+    </view>
+    <view class="divLine"></view>
+
+    <view class="fun">
+
+      <view class="thumbup">
+        <image class="icon" src="../../resources/thumbup.png"></image>
+        <text class="detail">{{article.thumbup}}</text>
+
+      </view>
+
+      <view class="comment" ontap="comment">
+        <image class="iconco" src="../../resources/comment.png"></image>
+        <text class="detailco">{{article.comment}}</text>
+      </view>
+    </view>
+
+    <!-- <view class="collection" ontap="collect" >
+<image class="iconco" src="{{collectflag?'../../resources/addicon2.png':'../../resources/addicon1.png'}}" > </image>
+</view> -->
+
+    <view class="Line"></view>
+  </view>
+
+  <view class="total" wx:if="{{comment}}">
+    <view class="comment-all">
+      <form class="comment" bindsubmit="formSubmit">
+        <view class="inputco">
+          <input class='contentco' style="background-color: #FFFFFF;height:80rpx;" placeholder="请在这里输入"></input>
+        </view>
+
+      </form>
+    </view>
+
+    <view class="btn-area">
+      <button form-type="submit" class="btn-submit">确认提交</button>
+    </view>
+  </view>
+
+  <view wx:for="{{reply}}" wx:key="id">
+    <view class="article" id="{{item.article_id}}" ontap="comment">
+      <view class="user" id="{{dalao_id}}" bindtap="follow">
+        <view>
+          <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <view class="info">
+          <text id="nickname">{{item.nickname}}\n</text>
+        </view>
+      </view>
+      <view class="content">{{item.content}}</view>
+      <view class="fun">
+        <image class="icon" src="../../resources/clock.png"></image>
+        <text class="detail">{{item.date}}</text>
+        <image class="icon" src="../../resources/thumbup.png"></image>
+        <text class="detail">{{item.thumbup}}</text>
+        <image class="icon" src="../../resources/comment.png"></image>
+        <text class="detail">{{item.comment}}</text>
+      </view>
+      <view class="divLine"></view>
+    </view>
+  </view>
+</scroll-view>
+
+<view>
+  <text>我的评论</text>
+  <input class='contentco' style="background-color: #FFFFFF;height:80rpx;" placeholder="写点儿什么吧" bindinput="commentInput"></input>
+  <view class="btn-area">
+      <button form-type="submit" class="btn-submit" bindtap="formSubmit">确认提交</button>
+    </view>
+</view>
+
+<view>
+  <image class="adver" src="../../resources/lunthr.jpg" style="width:100%; height:250rpx;align-items:center;"> </image>
+</view>

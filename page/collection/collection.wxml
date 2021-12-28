@@ -1,0 +1,92 @@
+<!--index.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<!--内容-->
+<view wx:if="{{currentTab==0}}">
+  <view class='info'>
+    
+<scroll-view scroll-y="True">
+    <view wx:for="{{datas}}" wx:key="id">
+      <view wx:if="{{item.type==0}}">
+      <view class="question" id="{{item.collection_id}}" ontap="comment">
+        <view class="user">
+          <view>
+            <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+          </view>
+          <view class="info">
+            <text id="nickname">{{item.nickname}}\n</text>
+          </view>
+        </view>
+        <view class="content-all">
+          <view class="content">{{item.content}}</view>
+          <!--这个地方用了一张测试的图片-->
+          <view wx:if="{{question.image_path==null}}" class="picture">
+            <image src="../../resources/test.png" style="width:200rpx;height:150rpx;"></image>
+            <!--获取问题图片<image src="{{question.image_path}}"></image>-->
+
+          </view>
+        </view>
+        <view class="fun">
+          <image class="icon" src="../../resources/clock.png"></image>
+          <text class="detail">{{item.create_date.year+1900}}-{{item.create_date.month+1}}-{{item.create_date.date}}</text>
+          <image class="icon" src="../../resources/thumbup.png"></image>
+          <text class="detail">{{item.thumbup}}</text>
+          <image class="icon" src="../../resources/money.png"> </image>
+          <text class="detail">{{item.valuecoin}}</text>
+          <image class="icon" src="../../resources/comment.png"></image>
+          <text class="detail">{{item.comment}}</text>
+          <image class="icon" src="../../resources/collection.png"></image>
+        </view>
+
+      </view>
+      <view class="divLine"></view>
+      </view>
+    </view>
+</scroll-view>    
+    
+  </view>
+</view>
+
+<view wx:elif="{{currentTab==1}}">
+  <view class='info'>
+
+<scroll-view scroll-y="True">
+      <view wx:for="{{datas}}" wx:key="id">
+        <view wx:if="{{item.type==1}}">
+        <view class="cardLine"></view>
+        <view class="question" id="{{item.article_id}}" ontap="articom">
+          <view class="user">
+            <view>
+              <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+            </view>
+            <view class="info">
+              <text id="nickname">{{item.nickname}}\n</text>
+            </view>
+          </view>
+          <view class="content-all">
+
+            <view class="content">{{item.title}}\n</view>
+            <view class="content-part">{{item.content}}</view>
+            <!-- <view wx:if="{{question.image_path==null}}" class="picture">
+         <image src="../../resources/test.png" style="width:200rpx;height:150rpx;"></image>
+
+       </view> -->
+          </view>
+          <view class="fun">
+            <image class="icon" src="../../resources/clock.png"></image>
+            <text class="detail">{{item.create_date.year+1900}}-{{item.create_date.month+1}}-{{item.create_date.date}}</text>
+            <image class="icon" src="../../resources/thumbup.png"></image>
+            <text class="detail">{{item.thumbup}}</text>
+            <image class="icon" src="../../resources/comment.png"></image>
+            <text class="detail">{{item.comment}}</text>
+          </view>
+
+        </view>
+      </view>
+      </view>
+    </scroll-view>   
+    
+  </view>
+</view>

@@ -1,0 +1,113 @@
+/* pages/Register/Register.wxss */
+.register_form{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+   width: 100%;
+  align-items: center;
+}
+.register_view{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  height: 70rpx;
+
+}
+.register_view13{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  height:400rpx;
+
+}
+.register_view_label13{
+  width:245rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color:#4a4854;
+ 
+}
+
+.radio_group13{
+  display: flex;
+ width:440rpx;
+  flex-flow: row wrap;
+  align-content: space-around;
+  padding:17rpx 0 0 0;
+}
+.radio .wx-radio-input13{ 
+  height: 40rpx; 
+  width: 40rpx;
+  border-radius: 50%;
+  border: 2rpx  #999;
+  border-style: double;
+  background: transparent;
+
+}
+.register_view .register_view_label{
+  width: 32%;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color:#4a4854;
+}
+.register_view .register_view_input{
+  height:70rpx;
+  width:440rpx;
+  line-height: 70rpx;
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-color: #d0cde1;
+  border-bottom-width: 1rpx;
+}
+.radio_group{
+   display: flex;
+   flex-direction: row;
+   padding:17rpx 0 0 0;
+}
+.register_btn{
+  width: 60%;
+  line-height: 80rpx;
+  text-align:center;
+  background-color: #768cce;
+  border-radius: 10rpx;
+  margin-top: 100rpx;
+  color: #fff;
+}
+
+radio .wx-radio-input{ 
+  height: 40rpx; 
+  width: 40rpx;
+  border-radius: 50%;
+  border: 2rpx  #999;
+  border-style: double;
+  background: transparent;
+
+}
+
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: #768cce!important;
+ background: radial-gradient(circle, #768cce,#89ade4,white);
+  
+}
+ 
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+
+ content: ''; 
+ width: 36rpx;
+ height: 36rpx;
+ border-radius: 50%;
+ background-color:#768cce;
+ position: relative; }
+
+ 
+
+
+
+.backgroudph{
+  height:500rpx;
+}

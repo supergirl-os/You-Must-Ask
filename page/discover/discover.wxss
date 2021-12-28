@@ -1,0 +1,469 @@
+
+/*以下部分由我写的，如有不妥请修改*/
+.question{
+  margin:20rpx 20rpx 20rpx 20rpx;
+  
+  }
+.user{
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.info{
+  margin-top:0rpx;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+}
+.divLine{
+ margin-top:5rpx;
+ background: #8a8a8a;
+ width: 100%;
+ height: 1rpx;
+}
+.fun{
+
+  display: flex;
+}
+.detail{
+  color: #8a8a8a;
+  font-size: 35rpx;
+  margin-left:5rpx;
+  margin-right: 40rpx;
+}
+.icon{
+  width:35rpx;
+  height: 35rpx;
+  margin-left: 50rpx;
+  
+}
+.picture{
+  width:200rpx;
+  margin-left:20rpx;
+  height:150rpx;
+}
+.content-all{
+  display:flex;
+  margin:20rpx 0;
+  padding:20rpx 0;
+}
+.wx-navigator_JBV5If{
+  min-width: 112.5rpx; 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  padding-bottom: 5px; 
+  }
+.wx-image_9GbZXI{
+    width: 44px; 
+    height: 44px; 
+    display: block; 
+    background-color: transparent; 
+  }
+.wx-text_DGqVdA{
+  font-size: 12px; 
+  text-align: center; 
+  display: block; 
+  }
+.classifyiconWrap{
+  padding: 15px 37.5rpx 5px; 
+  padding-bottom: 5px; 
+
+  }
+.classifyicongrid{
+  width: 675rpx; 
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+  background-position: 50% 50%; 
+  flex-wrap: wrap;
+  border-color: lawngreen;
+  border-radius: 20rpx;
+  border-width: 2rpx;
+  }
+.Wrapscroll-view{
+  padding-top: 0rpx; 
+  padding-bottom: 30px; 
+  height: 100%; 
+  }
+.wx-view_TQ4nqD{
+  padding-top: 15px; 
+  }
+  ._other_text_LxtT2c1{
+    display: flex; 
+    font-size: 30rpx; 
+    margin-bottom: 10rpx;
+    text-align: center;
+    justify-content: center;
+    color: grey;
+  }
+._other_text_LxtT2c2{
+  display: flex; 
+  font-size: 30rpx; 
+
+  margin-bottom: 15rpx;
+  margin-left: 37.5rpx; 
+  }
+.passtitle{
+  display:block; 
+  font-size: 40rpx; 
+  margin-top:0rpx;
+  padding-top: 5rpx;
+  margin-bottom: 20rpx;
+  
+  text-align: center;
+  justify-content: center;
+}
+.wx-scroll-view_u9Dyk2{
+  display: flex; 
+  height: 90px; 
+  }
+.wx-view_Fsk3xr{
+  display: flex; 
+  padding:0 20rpx;
+  }
+.wx-navigator_NdRePK{
+  padding-left: 5px; 
+  padding-right: 5px; 
+  }
+.wx-view_rMrdRK{
+  width: 48px; 
+  height: 48px; 
+  background-position: 50% 50%; 
+  background-size: cover; 
+  border-radius: 48px; 
+  margin-bottom: 5px; 
+  }
+.useravatar{
+  width: 100%; 
+  height: 100%; 
+  border-radius: 48px; 
+  border-bottom-right-radius: 48px; 
+  border-bottom-left-radius: 48px; 
+  border-top-right-radius: 48px; 
+  border-top-left-radius: 48px; 
+  }
+.wx-text_rEcdDL{
+  font-size: 10px; 
+  text-align: center; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical; 
+  -webkit-line-clamp: 1; 
+  line-height: 1.5em; 
+  }
+.PanellistWrap{
+  padding: 10rpx 0rpx 5px; 
+  padding-bottom: 5px; 
+  }
+._other_text_LxtT2c{
+  display: block; 
+  font-size: 14px; 
+  margin-bottom: 10px; 
+  }
+
+.cardLine{
+  margin-top:5rpx;
+  background: lightgrey;
+  width: 100%;
+  height: 8rpx;
+}
+
+.luntext{
+  display:flex;
+  justify-content: center;
+  color:#768cce;
+  margin:5rpx 0 2rpx 0;
+}
+.lunone{
+  display:flex;
+  justify-content: center;
+  padding:0 10rpx;
+  border-radius: 40rpx;
+}
+.cata{
+  margin-top:10rpx;
+  margin-bottom: 0rpx;
+  height:70rpx;
+  width:280rpx;
+  display:flex;
+  margin-left: 10rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #768cce;
+  border-bottom-width: 3rpx;
+}
+.cata-text{
+  display:flex;
+  padding:10rpx 0 0rpx 5rpx ;
+  font-size: 35rpx;
+  margin-bottom: 0;
+}
+.cata-im{
+  padding:10rpx 0 0rpx 5rpx;
+  margin-bottom: 0;
+}
+page{
+    width: 100%;
+    height: 100%;
+}
+.all_submit{
+  margin-top: 20rpx;
+   border-radius: 50rpx 50rpx 0 0;
+   background:-webkit-linear-gradient(top,#99abe1,#c3d6f2) ;
+   height:auto;
+}
+.container{
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+}
+.testbutton{
+  position: fixed;
+  margin:0 325rpx 10rpx 325rpx;
+  height:100rpx;
+  line-height: 40rpx;
+  padding:6px 6px;
+  text-align:center;
+  background-color:#768cce;
+  border-radius: 50rpx;
+  bottom: 0rpx;
+  color: #fff;
+
+}
+.title{
+    margin: 15rpx 5%;
+    width: 90%;
+    text-align: center;
+    height: 60rpx;
+    font-size: 38rpx;
+    border-bottom: 1px solid #f5f5f5;
+}
+.row{
+    flex: 1;
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 20rpx 5%;
+    overflow: hidden;
+}
+.row .text{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    font-size: 36rpx;
+    color: black;
+}
+.date{
+    padding: 5rpx 0;
+}
+.top{
+   display: flex;
+   flex-direction: row;
+}
+.top-text{
+  display:flex;
+  justify-content: center;
+  margin:10rpx 0 0 275rpx;
+  font-size: 40rpx;
+}
+.bottom{
+    width: 100%;
+   margin-bottom: 50rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.money{
+  margin-top:10rpx;
+  margin-bottom: 0rpx;
+  height:70rpx;
+  width:180rpx;
+  display:flex;
+  margin-left: 10rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #768cce;
+  border-bottom-width: 3rpx;
+}
+.money-text{
+  display:flex;
+  padding:14rpx 0 0rpx 5rpx ;
+  font-size: 30rpx;
+  margin-bottom: 0;
+}
+/*
+.bottom .btn{
+    flex: 1;
+    line-height: 2;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    margin: 30rpx 30rpx;
+}*/
+.btn.success{
+    display:flex;
+    margin-right: 0;
+    margin:5rpx 0 0 190rpx;
+    width: 70rpx;
+}
+.btn.del{
+    background: #e64340;
+    color: #fff;
+}
+.btn.plusph{
+    display:flex;
+    margin-right: 0;
+    margin:30rpx 0 0 260rpx;
+    width: 200rpx;
+    height:200rpx;
+    background: white;
+    border-radius: 50%;
+}
+
+.addph
+{
+  margin:50rpx 0rpx 0 50rpx;
+}
+.textarea {
+  font-size: 28rpx;
+  background-color:#bcc5df;
+  width: 100%;
+  height: 600rpx;
+}
+
+.placeholder {
+  font-size: 28rpx;
+  color: gray;
+}
+
+.q-image{
+  width: 400rpx;
+  height: 300rpx;
+  margin: 30rpx 30rpx;
+}
+.q-image-wrap{
+  display:flex;
+}
+.delete{
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  background: #99abe1;
+  margin:140rpx 0 0 100rpx;
+
+}
+
+/*.stepper {  
+    width: 100px;  
+    height: 40px;  
+   
+    border: 2px solid rgb(66, 47, 240);  
+    border-radius: 10px;  
+    margin:0 auto;  
+}  */
+  
+/*加号和减号*/  
+.btn.plus{
+   display:flex;
+  width:80rpx;
+  height:60rpx;
+  margin:20rpx 0 0 0;
+  font-size:32rpx;
+  justify-content: center;
+  align-items: center;
+   border-style: solid;
+  border-color:grey;
+  border-width: 1rpx;
+}
+.stepper-text {  
+  display:flex;
+  height:60rpx;
+  width:60rpx;
+  padding:20rpx;
+  margin:0 0 0 0;
+  font-size: 30rpx;
+  justify-content:center; 
+  align-items:center;
+}  
+.stepper{
+  height:60rpx;
+  margin:20rpx 0 0 0;
+  width:60rpx;
+  padding:0;
+  border-radius: 20rpx 0 0rpx 20rpx;
+  border-color: grey;
+  background: #99abe1;
+  border-style: solid;
+  border-width: 2rpx; 
+}
+.steppero{
+  height:60rpx;
+  margin:20rpx 0 0 0;
+  width:60rpx;
+  padding:0;
+  border-radius: 0rpx 20rpx 20rpx 0rpx;
+  border-width: 2rpx;
+  border-color: grey;
+  background: #99abe1;
+  border-style: solid;
+}
+
+ 
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  
+
+.listitem_creattime{
+  color: gold;
+  font-size: 20px;
+}
+
+.btn-success{
+  display:flex;
+  float:right;
+  margin:10rpx 10rpx 0 90rpx;
+  width:240rpx;
+  height:70rpx;
+  font-size:35rpx;
+  align-items: center;
+  justify-content: center;
+  background: #99abe1;
+  border-radius: 50rpx;
+}
+.user-photo{
+text-align: left;
+  display:inline-block;
+  vertical-align: top;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.content{
+  margin-left:10rpx;
+  width:250rpx;
+  height:150rpx;
+  margin-right:10rpx;
+}
+.content-part{
+  width:900rpx;
+  margin-left:15rpx;
+  display: -webkit-box;  /*设置为弹性盒子*/
+  -webkit-line-clamp: 5;  /*最多显示5行*/
+  overflow: hidden;  /*超出隐藏*/
+  text-overflow: ellipsis;  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;  /*强制英文单词自动换行*/
+}

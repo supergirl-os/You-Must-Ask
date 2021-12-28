@@ -1,0 +1,370 @@
+.luntext{
+  display:flex;
+  justify-content: center;
+  color:#768cce;
+  margin:5rpx 0 2rpx 0;
+}
+.lunone{
+  display:flex;
+  justify-content: center;
+  padding:0 10rpx;
+  border-radius: 40rpx;
+}
+.cata{
+  margin-top:10rpx;
+  margin-bottom: 0rpx;
+  height:70rpx;
+  width:280rpx;
+  display:flex;
+  margin-left: 10rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #768cce;
+  border-bottom-width: 3rpx;
+}
+.cata-text{
+  display:flex;
+  padding:10rpx 0 0rpx 5rpx ;
+  font-size: 35rpx;
+  margin-bottom: 0;
+}
+.cata-im{
+  padding:10rpx 0 0rpx 5rpx;
+  margin-bottom: 0;
+}
+.page{
+    width: 100%;
+    height: 100%;
+}
+
+
+.show_question{
+ position: fixed;
+ top:385rpx;
+ left:0;
+ width:100%;
+ height: 100%;
+ overflow-y: auto;
+}
+.question_item{
+  padding:20rpx;
+  height:290rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+ 
+}
+.show_question:last-child{
+  border-bottom: none;
+}
+.fromquestion{
+  height: 200rpx;
+
+}
+.question_image{
+  width:calc(100%-420rpx);
+  float:right;
+  margin-right: 10rpx;
+  margin-top:20rpx;
+}
+.question_content{
+  width:390rpx;
+  float: left;
+  margin-left: 20rpx;
+  height: 200rpx;
+  padding-top: 20rpx;
+}
+.que_content{
+  font-size: 30rpx;
+}
+.auto-image{
+  width:220rpx;
+  height:150rpx;
+}
+
+.all_submit{
+  margin-top: 20rpx;
+   border-radius: 50rpx 50rpx 0 0;
+   background:-webkit-linear-gradient(top,#99abe1,#c3d6f2) ;
+   height:auto;
+}
+.container{
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+}
+.testbutton{
+  position: fixed;
+  margin:0 325rpx 10rpx 325rpx;
+  height:100rpx;
+  line-height: 40rpx;
+  padding:6px 6px;
+  text-align:center;
+  background-color:#768cce;
+  border-radius: 50rpx;
+  bottom: 0rpx;
+  color: #fff;
+
+}
+.title{
+    margin: 15rpx 5%;
+    width: 90%;
+    text-align: center;
+    height: 60rpx;
+    font-size: 38rpx;
+    border-bottom: 1px solid #f5f5f5;
+}
+.row{
+    flex: 1;
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 20rpx 5%;
+    overflow: hidden;
+}
+.row .text{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    font-size: 36rpx;
+    color: black;
+}
+.date{
+    padding: 5rpx 0;
+}
+.top{
+   display: flex;
+   flex-direction: row;
+}
+.top-text{
+  display:flex;
+  justify-content: center;
+  margin:10rpx 0 0 275rpx;
+  font-size: 40rpx;
+}
+.bottom{
+    width: 100%;
+   margin-bottom: 50rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+}
+.money{
+  margin-top:10rpx;
+  margin-bottom: 0rpx;
+  height:70rpx;
+  width:180rpx;
+  display:flex;
+  margin-left: 10rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #768cce;
+  border-bottom-width: 3rpx;
+}
+.money-text{
+  display:flex;
+  padding:14rpx 0 0rpx 5rpx ;
+  font-size: 30rpx;
+  margin-bottom: 0;
+}
+/*
+.bottom .btn{
+    flex: 1;
+    line-height: 2;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    margin: 30rpx 30rpx;
+}*/
+.btn.success{
+    display:flex;
+    margin-right: 0;
+    margin:5rpx 0 0 190rpx;
+    width: 70rpx;
+}
+.btn.del{
+    background: #e64340;
+    color: #fff;
+}
+.btn.plusph{
+    display:flex;
+    margin-right: 0;
+    margin:30rpx 0 0 260rpx;
+    width: 200rpx;
+    height:200rpx;
+    background: white;
+    border-radius: 50%;
+}
+
+.addph
+{
+  margin:50rpx 0rpx 0 50rpx;
+}
+.textarea {
+  font-size: 28rpx;
+  background-color:#bcc5df;
+  width: 100%;
+  height: 600rpx;
+}
+
+.placeholder {
+  font-size: 28rpx;
+  color: gray;
+}
+
+.q-image{
+  width: 400rpx;
+  height: 300rpx;
+  margin: 30rpx 30rpx;
+}
+.q-image-wrap{
+  display:flex;
+}
+.delete{
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+  background: #99abe1;
+  margin:140rpx 0 0 100rpx;
+
+}
+
+/*.stepper {  
+    width: 100px;  
+    height: 40px;  
+   
+    border: 2px solid rgb(66, 47, 240);  
+    border-radius: 10px;  
+    margin:0 auto;  
+}  */
+  
+/*加号和减号*/  
+.btn.plus{
+   display:flex;
+  width:80rpx;
+  height:60rpx;
+  margin:20rpx 0 0 0;
+  font-size:32rpx;
+  justify-content: center;
+  align-items: center;
+   border-style: solid;
+  border-color:grey;
+  border-width: 1rpx;
+}
+.stepper-text {  
+  display:flex;
+  height:60rpx;
+  width:60rpx;
+  padding:20rpx;
+  margin:0 0 0 0;
+  font-size: 30rpx;
+  justify-content:center; 
+  align-items:center;
+}  
+.stepper{
+  height:60rpx;
+  margin:20rpx 0 0 0;
+  width:60rpx;
+  padding:0;
+  border-radius: 20rpx 0 0rpx 20rpx;
+  border-color: grey;
+  background: #99abe1;
+  border-style: solid;
+  border-width: 2rpx; 
+}
+.steppero{
+  height:60rpx;
+  margin:20rpx 0 0 0;
+  width:60rpx;
+  padding:0;
+  border-radius: 0rpx 20rpx 20rpx 0rpx;
+  border-width: 2rpx;
+  border-color: grey;
+  background: #99abe1;
+  border-style: solid;
+}
+
+ 
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  
+
+.listitem_creattime{
+  color: gold;
+  font-size: 20px;
+}
+
+.btn-success{
+  display:flex;
+  float:right;
+  margin:10rpx 10rpx 0 90rpx;
+  width:240rpx;
+  height:70rpx;
+  font-size:35rpx;
+  align-items: center;
+  justify-content: center;
+  background: #99abe1;
+  border-radius: 50rpx;
+}
+/*以下部分由我写的，如有不妥请修改*/
+.question{
+  margin:20rpx 20rpx 20rpx 20rpx;
+  }
+.user{
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.info{
+  margin-top:0rpx;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+}
+.user-photo{
+text-align: left;
+  display:inline-block;
+  vertical-align: top;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.divLine{
+  margin-top:5rpx;
+ background: #E0E3DA;
+ width: 100%;
+ height: 1rpx;
+}
+.content{
+  margin-left:15rpx;
+  width:450rpx;
+  height:150rpx;
+}
+.fun{
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  display: flex;
+}
+.detail{
+  color: #8a8a8a;
+  font-size: 35rpx;
+  margin-left: 5rpx;
+  margin-right: 40rpx;
+}
+.icon{
+  width:35rpx;
+  height: 35rpx;
+}
+.picture{
+  width:200rpx;
+  margin-left:20rpx;
+  height:150rpx;
+}
+.content-all{
+  display:flex;
+}

@@ -1,0 +1,80 @@
+{
+  "debug": true,
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#768cce",
+    "navigationBarTitleText": "非问不可",
+    "backgroundColor": "#bdbdbd",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "pages": [
+   
+    "page/post/post",
+    "page/chat/chat",
+    "page/discover/discover",
+    "page/notify/notify",
+    "page/profile/profile",
+    "page/detail/detail",
+    "page/baseStyle/baseStyle",
+    "page/compile/compile",
+    "page/comment/comment",
+    "page/collection/collection",
+    "page/followlist/followlist",
+    "page/mypost/mypost",
+    "page/follow/follow",
+    "page/history/history"
+  ],
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#768cce",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "最新悬赏",
+        "pagePath": "page/post/post",
+        "iconPath": "resources/e12860cb450a4c012c47ac95c933fb3a.png",
+        "selectedIconPath": "resources/f78f9afcd0b4998bdfc816203bb4c6dd.png"
+      },
+      {
+        "text": "新的发现",
+        "pagePath": "page/discover/discover",
+        "iconPath": "resources/9ed52ecc6de7058a799290b08296230a.png",
+        "selectedIconPath": "resources/1c95a1701b58f4dc4d5f768d6f148714.png"
+      },
+      {
+        "text": "智能对话",
+        "pagePath": "page/chat/chat",
+        "iconPath": "resources/robotgray.png",
+        "selectedIconPath": "resources/robotblack.png"
+      },
+      {
+        "text": "用户信息",
+        "pagePath": "page/profile/profile",
+        "iconPath": "resources/f27bd7cf9958fc5000f18d7f19714c96.png",
+        "selectedIconPath": "resources/a0d0f70cdd378be88638c61a9cfff0f7.png"
+      }
+    ],
+    "backgroundColor": "#c8d6eb"
+  },
+  "networkTimeout": {
+    "connectSocket": 10000,
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 10000
+  },
+"plugins": {
+  "chatbot": {
+    "version": "1.1.15",
+    "provider": "wx8c631f7e9f2465e1"
+  },
+  "WechatSI": {
+    "version": "0.3.1",
+    "provider": "wx069ba97219f66d99"
+  }
+},
+"requiredBackgroundModes": [
+  "audio"
+],
+  "sitemapLocation": "sitemap.json"
+}

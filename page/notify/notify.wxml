@@ -1,0 +1,75 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<view class="wx-view_GSg09R" data-c_e_id="wx_view_fe73d09a">
+
+    <view class="bottomGrayboder">
+        <view class="notifylistitem" >
+            <navigator class="nav_userlink"  hover-class="navigator-hover">
+                <view class="likeuser" >
+                    <image class="useravatar" mode="aspectFill" src="../../resources/20200315182132.jpg" 
+                    style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(../../resources/20200315182132.jpg); "/>
+                </view>
+            </navigator>
+            <view class="wx-view_WnUrtw2" >
+                <view class="wx-view_F9ISUC2">
+                    <navigator class="wx-navigator_wTcTS2"  hover-class="navigator-hover">
+                        <text class="wx-text_71u3gA2" >李广焱</text>
+                    </navigator>
+                    <text class="wx-text_kGXxsa2" >解答了一个问题</text>
+                    <text class="wx-text_kGXxsa3" >6小时前</text>
+                </view>
+            </view>
+            <navigator class="nav_commoditylink"  hover-class="navigator-hover" url="../detail/detail">
+                <image class="wx-image_5vt1BO" mode="aspectFit" src="../../resources/yes.png" style="background-image: url(../../resources/yes.jpg); background-size: contain; background-position: center center; background-repeat: no-repeat; "/>
+            </navigator>
+        </view>
+    </view>
+
+
+    <view class="bottomGrayboder" data-c_e_id="wx_view036db106">
+        <view class="notifylistitem" data-c_e_id="wx_view7f911b50">
+            <navigator class="nav_userlink" data-c_e_id="wx_navigator842898a5" hover-class="navigator-hover">
+                <view class="likeuser" data-c_e_id="wx_view5f9fc5f5">
+                    <image class="useravatar" data-c_e_id="wx_image38cacd5c" mode="aspectFill" src="../../resources/20200315182106.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(../../resources/20200315182106.jpg); "/>
+                </view>
+            </navigator>
+            <view class="wx-view_WnUrtw2" data-c_e_id="wx_view2d58c3bc">
+                <view class="wx-view_F9ISUC2" data-c_e_id="wx_view6a7fea9a">
+                    <navigator class="wx-navigator_wTcTS2" data-c_e_id="wx_navigatorbdd2e341" hover-class="navigator-hover">
+                        <text class="wx-text_71u3gA2" data-c_e_id="wx_text7de85d19">苏鹏</text>
+                    </navigator>
+                    <text class="wx-text_kGXxsa2" data-c_e_id="wx_text49aa8c24">发布了一篇文章</text>
+                    <text class="wx-text_kGXxsa3" data-c_e_id="wx_textffa79a3a">6小时前</text>
+                </view>
+            </view>
+            <navigator class="nav_commoditylink" data-c_e_id="wx_navigatorcf89004f" hover-class="navigator-hover">
+                <image class="wx-image_5vt1BO" data-c_e_id="wx_imagedc65f68a" mode="aspectFit" 
+                src="../../resources/pencil.png"/>
+            </navigator>
+        </view>
+    </view>
+    <view class="bottomGrayboder" data-c_e_id="wx_view958eb778">
+        <view class="notifylistitem" data-c_e_id="wx_view66617f48">
+            <navigator class="nav_userlink" data-c_e_id="wx_navigator847cf9ac" hover-class="navigator-hover">
+                <view class="likeuser" data-c_e_id="wx_view604ca15d">
+                    <image class="useravatar" data-c_e_id="wx_image96c6f1ad" mode="aspectFill" src="../../resources/20200315182155.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(../../resources/20200315182155.jpg); "/>
+                </view>
+            </navigator>
+            <view class="wx-view_WnUrtw2" data-c_e_id="wx_view5e0a03ce">
+                <view class="wx-view_F9ISUC2" data-c_e_id="wx_view7d1e52fb">
+                    <navigator class="wx-navigator_wTcTS2" data-c_e_id="wx_navigator24d44aa2" hover-class="navigator-hover">
+                        <text class="wx-text_71u3gA2" data-c_e_id="wx_text66538d98">张蒙</text>
+                    </navigator>
+                    <text class="wx-text_kGXxsa2" data-c_e_id="wx_textdf6a516c">发布了一个问题</text>
+                    <text class="wx-text_kGXxsa3" data-c_e_id="wx_text99f85c0d">6小时前</text>
+                </view>
+            </view>
+            <navigator class="nav_commoditylink" data-c_e_id="wx_navigator22011f58" hover-class="navigator-hover">
+                <image class="wx-image_5vt1BO" data-c_e_id="wx_image63977c3c" mode="aspectFit" src="../../resources/quiz.png"/>
+            </navigator>
+        </view>
+    </view>
+   
+</view>

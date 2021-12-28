@@ -1,0 +1,177 @@
+/* page/comment/comment.wxss */
+#question{
+  margin:20rpx 20rpx 20rpx 20rpx;
+  }
+.user{
+  font-size: 40rpx;
+  display: flex;
+  margin-bottom: 10rpx;
+}
+.info{
+  margin-top:10rpx;
+  margin-left: 15rpx;
+}
+.picture{
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.user-photo{
+text-align: left;
+  display:inline-block;
+  vertical-align: top;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  padding-top: 5rpx;
+}
+.detail-time{
+  display:flex;
+  color: #8a8a8a;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 40rpx;
+}
+.divLine{
+  margin-top:5rpx;
+ background: #E0E3DA;
+ width: 100%;
+ height: 0rpx;
+}
+.Line{
+  margin-top:5rpx;
+ background: #E0E3DA;
+ width: 100%;
+ height: 3rpx;
+}
+
+.fun{
+  margin-top: 15rpx;
+  margin-right: 20rpx;
+  text-align: right;
+  display: flex;
+  height:50rpx;
+
+}
+.thumbup{
+  display:flex;
+  margin-left: 200rpx;
+  
+}
+.valuecoin{
+  display:flex;
+
+  margin-left: 10rpx;
+}
+.collection{
+  display:flex;
+ 
+}
+.comment{
+  display:flex;
+ width:600rpx;
+ height:100rpx;
+}
+.detail{
+  display:flex;
+  color: #8a8a8a;
+  font-size: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 40rpx;
+}
+.icon{
+  display:flex;
+  margin-right:0rpx;
+  width:40rpx;
+  height: 40rpx;
+  margin:0 0 0 0rpx;
+}
+.iconc{
+  width:40rpx;
+  height:40rpx;
+}
+.iconco{
+  width:40rpx;
+  height:40rpx;
+}
+.detailc{
+  display:flex;
+  width:60rpx;
+  color: #8a8a8a;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 40rpx;
+}
+.detailco{
+  display:flex;
+  color: #8a8a8a;
+  font-size: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 40rpx;
+}
+.btn-area{
+  width:200rpx;
+  height:80rpx;
+  display: flex;
+  float:center;
+  margin:10rpx 0 20rpx 275rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.btn-submit
+{
+  width:200;
+  background: #768cce;
+}
+
+
+
+.content{
+  margin-left:90rpx;
+}
+.inputco{
+  display: flex;
+   
+  
+}
+.comment-all{
+  display:flex;
+  flex-direction: row;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
+.contentco{
+  border-bottom-color: grey;
+  border-bottom-width: 1rpx;
+  border-bottom-style: solid;
+  width:550rpx;
+}
+
+.iconcol{
+  width:40rpx;
+  height:40rpx;
+  margin:10rpx 10rpx 0;
+  width: 100rpx;
+  display:flex;
+}
+.addph{
+  margin:10rpx 10rpx 0;
+  width: 100rpx;
+  display:flex;
+
+}
+.comment{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.adver{
+  display:flex;
+  justify-content: center;
+  padding:0 10rpx;
+  border-radius: 40rpx;
+  margin-top:20rpx;
+}

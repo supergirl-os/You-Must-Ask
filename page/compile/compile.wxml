@@ -1,0 +1,64 @@
+<!--pages/Register/Register.wxml-->
+<view class='container'>
+  <!--注册输入表：Begin-->
+  <view class='register_form'>
+    <!--输入框：用户名-->
+    <view class='register_view'>
+      <label class='register_view_label'>用 户 名：</label>
+      <input class='register_view_input' placeholder='{{userInfo.nickname}}' bindinput='GetUsername'></input>
+    </view>
+
+    <!--输入框：性别-->
+    <view class='register_view'>
+       <text class='register_view_label' decode="{{true}}" space="{{true}}">性&nbsp;&nbsp;&nbsp;&nbsp; 别：</text>
+      <radio-group class="radio_group" bindchange="RadioChange">
+        <label class='radio' wx:for='{{genders}}' wx:key='key'>
+          <radio value='{{item}}' checked='{{userInfo.gender == index}}'>{{item}}</radio>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='register_view'>
+      <text class='register_view_label' decode="{{true}}" space="{{true}}">学&nbsp;&nbsp;&nbsp;&nbsp; 校：</text>
+      <input class='register_view_input' placeholder='{{userInfo.school}}' bindinput='Getschool'></input>
+    </view>
+
+    <view class='register_view'>
+      <text class='register_view_label' decode="{{true}}" space="{{true}}">专&nbsp;&nbsp;&nbsp;&nbsp; 业：</text>
+      <input class='register_view_input' placeholder='{{userInfo.major}}' bindinput='Getmajor'></input>
+    </view>
+
+    <view class='register_view13'>
+       <text class='register_view_label13' decode="{{true}}" space="{{true}}">选择学科：</text>
+      <radio-group class="radio_group13" bindchange="Subselect">
+        <label class='radio13' wx:for='{{subjects}}' wx:key='key'>
+          <radio value='{{item}}' checked='{{userInfo.subject == iitem}}'>{{item}}</radio>
+        </label>
+      </radio-group>
+    </view>
+
+    <!--输入框：身份-->
+    <view class='register_view'>
+       <text class='register_view_label' decode="{{true}}" space="{{true}}">身&nbsp;&nbsp;&nbsp;&nbsp; 份：</text>
+      <radio-group class="radio_group" bindchange="RadioChange1">
+        <label class='radio' wx:for='{{identifications}}' wx:key='key'>
+          <radio value='{{item}}' checked='{{userInfo.identification == item}}'>{{item}}</radio>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='register_view'>
+      <label class='register_view_label'>个人签名：</label>
+      <input class='register_view_input' placeholder='{{userInfo.sign}}' bindinput='Getsign'></input>
+    </view>
+
+    <view class='register_btn' bindtap='Goaffirm'>确认/重新填写</view>
+
+  </view>
+
+
+</view>
+
+<view class='backgroudph'>
+ <image src="../../resources/compileph.png" style="width:750rpx; height:450rpx;float:center;"> </image>
+ </view>

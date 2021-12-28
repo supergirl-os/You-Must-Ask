@@ -1,0 +1,58 @@
+
+<!--index.wxml-->
+<view class="talk">
+
+<!--页面根标签-->
+<view class="content">
+<!--pics文件夹下的background.jpg文件-->
+<!-- <image class='background' src="../../resources/background1.png" mode="aspectFill"></image> -->
+<chat bind:backHome="goBackHome" bind:queryCallback="getQueryCallback"/>
+<!--页面其它部分-->
+</view>
+<!-- 
+  <view class="talk_title"> {{ message }} </view>
+  <view class="talk_record"> 
+  <view id="jp-container" class="jp-container jspScrollable"> 
+   <view class="jspScrollable">  
+    <view class="jspPane"> 
+
+    <block  wx:for="{{tmpleData}}"> 
+
+    <view class="talk_recordboxme" wx:if="{{item.id == '1'}}">
+        <view class="user">
+          <open-data type="userAvatarUrl" ></open-data> 
+        </view>
+        <view class="talk_recordtextbg"></view>
+				<view class="talk_recordtext">
+					<lable class="talk_label">{{item.msg}}</lable>
+					<lable class="talk_time">{{item.dateTime}}</lable>
+        </view>
+    </view>
+    <view class="talk_recordbox" wx:if="{{item.id == '2'}}">
+        <view class="user">
+          <image  src="../../resources/robot.png" ></image>
+        </view>
+        <view class="talk_recordtextbg"></view>
+				<view class="talk_recordtext">
+					<lable class="talk_label">{{item.msg}}</lable>
+					<lable class="talk_time">{{item.dateTime}}</lable>
+        </view>
+    </view>
+    </block>
+   </view>
+   </view>
+  </view>
+  </view> 
+</view>   -->
+<!-- <view style="height: 100vh">
+    <chat bind:backHome="goBackHome" bind:queryCallback="getQueryCallback"/>
+</view> -->
+</view> 
+
+<!-- 按钮 -->
+<!-- <view class="opgroup">
+<view class="mubu">
+      <input class="input"  bindinput="bindKeyInput" placeholder="请输入" />
+      <button class="_button"    bindtap="sendBt"><image class='imge' src="../../resources/img.png"></image></button>
+      </view>
+</view> -->

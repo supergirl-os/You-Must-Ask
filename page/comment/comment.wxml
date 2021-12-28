@@ -1,0 +1,114 @@
+<!--page/comment/comment.wxml-->
+
+<scroll-view scroll-y="True">
+  <view id="question">
+    <view class="user" bindtap="follow" id="{{dalao_id}}" >
+      <view>
+        <image class="user-photo" src="{{question.avatarUrl}}" background-size="cover"></image>
+      </view>
+      <view class="info">
+        <text id="nickname">{{question.nickname}}\n</text>
+        <view class="time">
+          <text class="detail-time">{{commentdata.Submitdate}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="content">{{commentdata.content}}</view>
+    <view wx:if="{{commentdata.small_image!=null}}" class="picture">
+      <image src="{{commentdata.small_image}}"></image>
+    </view>
+    <view class="divLine"></view>
+
+    <view class="fun">
+
+      <view class="valuecoin">
+        <image class="icon" src="../../resources/money.png" style="width:40rpx;height:40rpx;"> </image>
+        <text class="detail">{{commentdata.valuecoin}}</text>
+      </view>
+
+      <view class="thumbup">
+        <image class="icon" src="../../resources/thumbup.png"></image>
+        <text class="detail">{{commentdata.thumbup}}</text>
+      </view>
+      <view class="collection" ontap="collect">
+        <image class="iconc" src="../../resources/collection.png"></image>
+        <text class="detailc">收藏</text>
+      </view>
+
+      <view class="comment" ontap="comment">
+        <image class="iconco" src="../../resources/comment.png"></image>
+        <text class="detailco">{{commentdata.comment}}</text>
+      </view>
+
+      
+
+    </view>
+
+
+
+
+
+    <view class="Line"></view>
+  </view>
+
+  <view class="total" wx:if="{{comment}}">
+    <view class="comment-all">
+      <form class="comment" bindsubmit="formSubmit">
+        <view class="inputco">
+          <input class='contentco' style="background-color: #FFFFFF;height:80rpx;" placeholder="请在这里输入" bindinput="contentChange"></input>
+        </view>
+
+
+        <view class="question-images">
+          <block wx:for="{{images}}" wx:key="*this">
+            <view class="q-image-wrap">
+              <!-- 图片缩略图  -->
+              <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+              <!-- 移除图片的按钮  -->
+              <text class='delete' data-idx="{{index}}" bindtap="removeImage">删除</text>
+            </view>
+          </block>
+        </view>
+        <view class="btn-area">
+          <button form-type="submit" class="btn-submit">确认提交</button>
+        </view>
+      </form>
+      <view class="addph" bindtap="chooseImage" wx:if="{{images.length < 3}}">
+        <image class="addicon" src="../../resources/addicon.png" style="width:60rpx; height:60rpx;align-items:center;"> </image>
+      </view>
+      <view class="collection" ontap="collect">
+        <image class="iconcol" src="{{collectflag?'../../resources/addicon2.png':'../../resources/addicon1.png'}}" style="width:60rpx; height:60rpx;align-items:center; "> </image>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <view wx:for="{{reply}}" wx:key="id">
+    <view class="question" id="{{item.question_id}}" ontap="comment">
+      <view class="user" bindtap="follow" id="{{dalao_id}}">
+        <view>
+          <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <view class="info">
+          <text id="nickname">{{item.nickname}}\n</text>
+        </view>
+      </view>
+      <view class="content">{{item.content}}</view>
+      <view class="fun">
+        <image class="icon" src="../../resources/clock.png"></image>
+        <text class="detail">{{item.date}}</text>
+        <image class="icon" src="../../resources/thumbup.png"></image>
+        <text class="detail">{{item.thumbup}}</text>
+        <image class="icon" src="../../resources/comment.png"></image>
+        <text class="detail">{{item.comment}}</text>
+      </view>
+      <view class="divLine"></view>
+    </view>
+  </view>
+</scroll-view>
+
+<view>
+  <image class="adver" src="../../resources/lunthr.jpg" style="width:100%; height:250rpx;align-items:center;"> </image>
+</view>

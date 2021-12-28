@@ -1,0 +1,17 @@
+<!--page/followlist/followlist.wxml-->
+<scroll-view scroll-y="True">
+    <view wx:for="{{followlist}}" wx:key="id">
+
+        <view class="user" id="user_id" bindtap="follow">
+          <view>
+            <image class="user-photo" src="{{item.avatarUrl}}" background-size="cover"></image>
+          </view>
+          <view class="info">
+            <text>{{followlist.nickname}}\n</text>      
+          </view>
+
+      </view>
+      <view class="divLine"></view>
+    </view>
+
+  </scroll-view>
